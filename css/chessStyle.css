@@ -1,12 +1,13 @@
 .chessBoard{
     width: 550px;
     height: 550px;
-    border: 5px solid black;
+    border: 15px solid black;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 5px 5px 15px #999;
 }
 .whiteBox, .blackBox{
+    position: x;
     width: 12.5%;
     height: 12.5%;
     float: left;
@@ -15,7 +16,7 @@
     background-color: white;
 }
 .blackBox{
-    background-color: black;
+    background-color: rgb(168, 167, 167);
 }
 
 #heading{
@@ -25,6 +26,12 @@
     text-shadow: 2px 2px black,-2px -2px black,10px 10px 15px #777;
     color:rgba(255,127,80,0.9);
 }
+.whiteBox span , .blackBox span{
+    font-size: 50px;
+    padding: 10px;
+
+}
+
 @media screen and (min-width:850px){
     .chessBoard{
         width: 580px;
@@ -53,5 +60,12 @@
     #heading{
         font-size:45px;
     }
+
+    .whiteBox span , .blackBox span{
+        font-size: 30px;
+        padding: 5px;
+    
+    }
+
 
 }
